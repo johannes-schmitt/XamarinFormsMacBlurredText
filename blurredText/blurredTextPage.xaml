@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:blurredText"
+    x:Class="blurredText.blurredTextPage">
+    <StackLayout>
+        <!-- text is blurred with HorizontalOptions: Center, CenterAndExpand, End, EndAndExpand, Start, StartAndExpand --> 
+        <Label Text="Start" FontSize="25" HorizontalOptions="Center"          TextColor="Blue" x:Name="blurry1" />
+        <Label Text="Start" FontSize="25" HorizontalOptions="CenterAndExpand" TextColor="Blue" x:Name="blurry2" />
+        <Label Text="Start" FontSize="25" HorizontalOptions="End"             TextColor="Blue" x:Name="blurry3" />
+        <Label Text="Start" FontSize="25" HorizontalOptions="EndAndExpand"    TextColor="Blue" x:Name="blurry4" />
+        <Label Text="Start" FontSize="25" HorizontalOptions="Start"           TextColor="Blue" x:Name="blurry5" />
+        <Label Text="Start" FontSize="25" HorizontalOptions="StartAndExpand"  TextColor="Blue" x:Name="blurry6" />
+
+        <!-- text is sharp as expected with HorizontalOptions: Fill (default), FillAndExpand  -->
+        <Label Text="Start" FontSize="25" HorizontalOptions="Fill"            TextColor="Blue" x:Name="sharp1"  />
+        <Label Text="Start" FontSize="25" HorizontalOptions="FillAndExpand"   TextColor="Blue" x:Name="sharp2"  />
+        <Label Text="Start" FontSize="25"                                     TextColor="Blue" x:Name="sharp3"  />
+    </StackLayout>
+</ContentPage>
